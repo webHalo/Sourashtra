@@ -1,0 +1,813 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SOURASHTRA</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<script src="jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+<style>
+@import url("../webfonts/Ar_Bonnie/stylesheet.css");
+
+	@font-face{
+		font-family:"Vidaloka Regular";
+		src:url(fonts/Vidaloka-Regular.ttf);
+	}
+	@font-face{
+	font-family: "Ar Bonnie";
+	src: url(fonts/ARBONNIE.ttf);
+	}
+	
+</style>
+<style type="text/css">
+body {
+  width: 1586px;
+  height: 770px;
+}
+</style>
+<script>
+function bgChange(bg_color){
+	document.body.style.backgroundColor=bg_color;
+}
+</script>
+<script>
+var myScrollFunc=function(){
+	var y=window.scrollY;
+	if((y>=0)&&(y<=10)){
+		scrol.className="Scroll show fa fa-arrow-down col-lg-3 col-lg-push-4 col-md-5 col-md-push-3 col-sm-7 col-sm-push-2 col-xs-7 col-xs-push-2";
+	}
+	else{
+		scrol.className="Scroll hide fa fa-arrow-down col-lg-3 col-lg-push-4 col-md-5 col-md-push-3 col-sm-7 col-sm-push-2 col-xs-7 col-xs-push-2";
+	}
+	if ((y>=10)&&(y<=200)){
+		theme.className="ThemeChange hide container-fluid";
+		hol.className="Hola show container-fluid";
+	}else{
+		theme.className="ThemeChange show container-fluid";
+		hol.className="Hola hide container-fluid";
+	}
+	if((y>=200)&&(y<=300)){
+		theme.className="ThemeChange hide container-fluid";
+		prologu.className="Prologue show";
+		p1.className="Para1 show1";
+		p2.className="Para2 show1";
+		pim.className="Prologueimg show2 col-lg-9 col-md-11 col-sm-12 col-xs-12";
+	}else{
+		prologu.className="Prologue hide";
+		p1.className="Para1 hide1";
+		p2.className="Para2 hide1";
+		pim.className="Prologueimg hide2  col-lg-9 col-md-11 col-sm-12 col-xs-12";
+	}
+	if((y>=300)&&(y<=400)){
+		theme.className="ThemeChange hide container-fluid";
+		histor1.className="History1 show";
+		histor2.className="History2 show";
+		him.className="Historyimg show4 col-lg-10 col-md-12";
+		h1.className="HistoryT1 show5";
+		h2.className="HistoryT2 show5";
+		him1.className="Historyimg1 hide7 col-lg-10 col-md-12";
+		h11.className="HistoryT11 hide6";
+		h21.className="HistoryT21 hide6";
+		him2.className="Historyimg2 hide4";
+		h12.className="HistoryT12 hide5";
+		h22.className="HistoryT22 hide5";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+	}else if((y>=400)&&(y<=500)){
+		histor2.className="History2 hide3";
+		histor1.className="History1 show";
+		him.className="Historyimg hide4 col-lg-10 col-md-12";
+		h1.className="HistoryT1 hide5";
+		h2.className="HistoryT2 hide5";
+		him1.className="Historyimg1 show7 col-lg-10 col-md-12";
+		h11.className="HistoryT11 show6";
+		h21.className="HistoryT21 show6";
+		him2.className="Historyimg2 hide4 col-lg-10 col-md-12";
+		h12.className="HistoryT12 hide5";
+		h22.className="HistoryT22 hide5";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+	}else if((y>=500)&&(y<=600)){
+		histor2.className="History2 hide31";
+		histor1.className="History1 show";
+		him1.className="Historyimg1 hide7 col-lg-10 col-md-12";
+		h11.className="HistoryT11 hide6";
+		h21.className="HistoryT21 hide6";
+		him2.className="Historyimg2 show4 col-lg-10 col-md-12";
+		h12.className="HistoryT12 show5";
+		h22.className="HistoryT22 show5";
+		him3.className="Historyimg3 hide7 col-lg-10 col-md-12";
+		h13.className="HistoryT13 hide6";
+		h23.className="HistoryT23 hide6";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=600)&&(y<=700)){
+		histor2.className="History2 hide32";
+		histor1.className="History1 show";
+		him2.className="Historyimg2 hide4 col-lg-10 col-md-12";
+		h12.className="HistoryT12 hide5";
+		h22.className="HistoryT22 hide5";
+		him3.className="Historyimg3 show7 col-lg-10 col-md-12";
+		h13.className="HistoryT13 show6";
+		h23.className="HistoryT23 show6";
+		h14.className="HistoryT14 hide5";
+		h24.className="HistoryT24 hide6";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=700)&&(y<=800)){
+		histor2.className="History2 hide33";
+		histor1.className="History1 show";
+		him3.className="Historyimg3 hide7 col-lg-10 col-md-12";
+		h13.className="HistoryT13 hide6";
+		h23.className="HistoryT23 hide6";
+		h14.className="HistoryT14 show5";
+		h24.className="HistoryT24 show6";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=800)&&(y<=1000)){
+		histor1.className="History1 hide";
+		histor2.className="History2 hide";
+		h14.className="HistoryT14 hide5";
+		h24.className="HistoryT24 hide6";
+		cultur.className="Culture show";
+		c1.className="Culture1 show6";
+		c2.className="Culture2 show5";
+		c3.className="Culture3 show6";
+		c4.className="Culture4 show5";
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=1000)&&(y<=1100)){
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+		languag.className="Language show";
+		l1.className="Language1 show6";
+		lim.className="Languageimg show5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=1100)&&(y<=1200)){
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script show";
+		sim1.className="Scriptimg1 show6";
+		sim2.className="Scriptimg2 show5";
+		sim3.className="Scriptimg3 show5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=1200)&&(y<=1600)){
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic show";
+		pho1.className="Phoneticcontent1 show col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 show col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 show col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 show col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=1600)&&(y<=1750)){
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC show";
+		famcon.className="FamousCon show";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}else if((y>=1750)&&(y<=1900)){
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC show";
+		magcon.className="MagazineCon show";
+	}else{
+		histor1.className="History1 hide";
+		histor2.className="History2 hide";
+		him.className="Historyimg hide4 col-lg-10 col-md-12";
+		h1.className="HistoryT1 hide5";
+		h2.className="HistoryT2 hide5";
+		him1.className="Historyimg1 hide7 col-lg-10 col-md-12";
+		h11.className="HistoryT11 hide6";
+		h21.className="HistoryT21 hide6";
+		him2.className="Historyimg2 hide4 col-lg-10 col-md-12";
+		h12.className="HistoryT12 hide5";
+		h22.className="HistoryT22 hide5";
+		him3.className="Historyimg3 hide7 col-lg-10 col-md-12";
+		h13.className="HistoryT13 hide6";
+		h23.className="HistoryT23 hide6";
+		h14.className="HistoryT14 hide5";
+		h24.className="HistoryT24 hide6";
+		cultur.className="Culture hide";
+		c1.className="Culture1 hide6";
+		c2.className="Culture2 hide5";
+		c3.className="Culture3 hide6";
+		c4.className="Culture4 hide5";
+		languag.className="Language hide";
+		l1.className="Language1 hide6";
+		lim.className="Languageimg hide5";
+		scrip.className="Script hide";
+		sim1.className="Scriptimg1 hide6";
+		sim2.className="Scriptimg2 hide5";
+		sim3.className="Scriptimg3 hide5";
+		phonet.className="Phonetic hide";
+		pho1.className="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho2.className="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho3.className="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4";
+		pho4.className="Phoneticcontent4 hide col-lg-12 col-md-12 col-sm-12 col-xs-12";
+		famhead.className="FamousC hide";
+		famcon.className="FamousCon hide";
+		maghead.className="MagazineC hide";
+		magcon.className="MagazineCon hide";
+	}
+}
+
+window.addEventListener("scroll",myScrollFunc);
+</script>
+</head>
+
+<body>
+<div style="" class="container-fluid">
+<!--SOURASHTRA HEADING-->
+<div class="SourashtraC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 class="Sourashtra">SOURASHTRA</h1>
+</div>
+</div>
+<!--THEME-->
+<div id="theme" style="position:relative; top:180px; height:300px; z-index:999;margin-bottom:-300px;" class="ThemeChange show container-fluid">
+	<div style="width:100%;; height:inherit;" class="container-fluid">
+    	<div style="left:10px;display: flex;height: 50px;width: 100%;" class="container-fluid">
+        	<div style="width:50px; background-image:url(images/setting.png); background-size:cover; background-position:center; height:50px;position: relative;left: 10px; bottom:10px;" class="logo"></div>
+        	<div style="width:235px; height:inherit;position: relative;left: 10px; bottom:10px;" class="bb"><h1 style="font-size: 22px;position: relative;top: -6px;left: 10px;">Choose Theme</h1></div>
+        </div>
+    <table style="width:100%; height:10px;">
+    <tr>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#E64C3C;"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#26B899"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#34495D"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#ED1867"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#20BECF"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#EFC94C"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#955AA4"></td>
+    <td onClick="bgChange(this.style.backgroundColor)" style="width:10%; height:10px; background-color:#EAE0BF"></td>
+    </tr>
+    </table>
+    </div>
+    </div>
+<!--HOLA-->
+<div class="HolaC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div id="hol" class="Hola hide container-fluid">
+    </div>
+</div>
+<!--SCROLL-->
+<div class="ScrollC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div id="scrol" class="fa fa-arrow-down Scroll col-lg-3 col-lg-push-4 col-md-5 col-md-push-3 col-sm-7 col-sm-push-2 col-xs-7 col-xs-push-2">
+    	<p class="ScrollT">SCROLL TO CONTINUE</p>
+    </div>
+</div>
+<!--PROLOGUE HEADING-->
+<div class="PrologueC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="prologu" class="Prologue hide">PROLOGUE</h1>
+</div>
+<!--PROLOGUE-->
+<div class="PrologueC2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="Prologuecontent col-lg-7 col-md-7 col-sm-7 col-xs-7">
+    	<p id="p1" class="Para1 hide1">Saurashtra or Patnūlkarar refers to a community of people who speak the Indo-Aryan language- Saurashtra. The language is largely only in spoken form even though the language has its own script. Saurashtra in context to region is also known as Kathiawar and Sorath.They had their original homes in Gujarat and migrated to Madurai and other places of Tamil Nadu. The origin of the name date backs to the time when the ancestors of these people inhabited the kingdom of Sourashtra in Gujarat.</p>
+    	<p id="p2" class="Para2 hide1"> The Tamil name by which these people is known in Southern India is Patnūlkarar, that is silk-thread workers or weavers who speak Pattunuli or Khatri , a dialect of Gujarati. The Bhagavata calls the Abhiras as saurashtra and Avantyas rulers (Saurashtra-Avantya-Abhira) and the Vishnu treats the Abhiras as occupying the Saurashtra and Avantil provinces. Sourashtra-Patnūlkarar wear the sacred thread and are brahmins but belong to linguistic minorities. Sourashtrians are veggies by birth and their ancestral origin is Gujarat.</p>
+    </div>
+    <div class="Prologueimage col-lg-5 col-md-5 col-sm-5 col-xs-5">
+    	<div id="pim" class="Prologueimg hide2 col-lg-9 col-md-11 col-sm-12 col-xs-12"></div>
+    </div>
+</div>
+<!--HISTORY HEADING-->
+<div id="hic" class="HistoryC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1 id="histor2" class="History2 hide">HISTORY</h1>
+    <h1 id="histor1" class="History1 hide">OUR STORY</h1>
+</div>
+<!--HISTORY1-->
+<div style="height:auto;" class="HistoryC2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="HistoryCC col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<div id="him" class="Historyimg hide4 col-lg-10 col-md-12 col-sm-12 col-xs-12"></div>
+    </div>	
+    <div class="Historycontent col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    	<p id="h1" class="HistoryT1 hide5">From 500 to 1000 A.D. Saurashtrians lived in Mandsaur, Dasapura towns of the old Saurashtra Province which included portions of the present Gujarat and Maharashtra States doing spinning and weaving works. In Dasapura they built their own a Sun Temple and worshipped Sun God. The Sanskrit term Saura means sun. As they built and worshipped Sun or Saura God they were called as Saurashtrians and the region they lived was naturally called as Saurashtra Province.  As per one school of thought, “Saurashtra” mean Sau + Rashtra (100 nations), but as per another school of thought, this is a fractured speech of “Su-Rashtra” meaning Good Country.</p>
+    </div>
+    <div class="Historycontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h2" class="HistoryT2 hide5">In major portions of Saurashtra region cotton was growing in large quantities. It was long staple variety cotton. As it was growing in the Arabian Sea breeze it was similar to the Egyptian or American type cotton very suitable for making thin thread. Even today the cotton plants grow most in Ahmedabad in the whole of the Deccan Plateau. Also, the climate of the region is most suited to make thin thread and dresses. So, they naturally learned the art of weaving thin clothes out of the very thin silk like cotton available there.</p>
+    </div>
+</div>
+<!--HISTORY2-->
+<div style="height:auto;" style="height: 400px;" class="HistoryC21 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Historycontent1 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    	<p id="h11" class="HistoryT11 hide6">Saurashtra region was ruled by the Mourya dynasty King Somasarma, Saka dynasty King Rudradaman and Gupta dynasty King Chandragupta called Vikramaditya. King Kumaragupta of 473 A.D. has said in his Royal Charter that the Saurashtrians who were spinning silk like thread and weaving thin clothes out of it, migrated from Lata town of Saurashtra region to Mandsaur of Malwa region during the Gupta period; they were called as "Pattavayahs" weavers of thin silk like cotton clothes or silk clothes. Queen Mangammal (1681-1704) of Madurai also has said in her Royal Charter that such dress makers as Pattavayar Migrations of Saurashtraians.</p>
+    </div>
+    <div class="HistoryCC1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<div id="him1" class="Historyimg1 hide7 col-lg-10 col-md-12 col-sm-12 col-xs-12"></div>
+    </div> 
+    <div class="Historycontent1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h21" class="HistoryT21 hide6">In 1024 Mohamed of Ghazini attacked the area of Somnath in Kathiawar. He plundered, looted, destroyed the Temple of Somnath and carried away valuable jewels, gold, diamonds, etc. As the Saurashtrians were unable to bear the harassments, continued disturbances of their works and destruction of properties by Ghazini 17 times or so they left their beloved place and migrated to peaceful places in the North, Centre and South of India.</p>
+    </div>
+</div>
+<!--HISTORY3-->
+<div style="height:auto;" class="HistoryC22 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="HistoryCC2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<div id="him2" class="Historyimg2 hide4 col-lg-10 col-md-12 col-sm-12 col-xs-12"></div>
+    </div>	
+    <div class="Historycontent2 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+   		<p id="h12" class="HistoryT12 hide5">Some migrated to the Surat town on the banks of River Tungabhadhra and then to Devagiri of Yadava Kingdom. In Devagiri or Daulatabad they lived for about 2 to 3 centuries. As the dress, culture and movements of the people there were similar to theirs they adjusted themselves and lived there. Thereby some terms and words of Varraja language got mixed with the Saurashtra language.In 1294 the Sultan of Delhi, Alauddin Khilji and his General Malik Kafur crossed Vindhya hills and Devagiri, waged battles with the Yadava King Ramchand. In the battle Yadava King was defeated and imprisoned.</p> 
+    </div>
+    <div class="Historycontent2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h22" class="HistoryT22 hide5">Alauddin Kiliji plundered all the properties of the people and left for Delhi. Due to this historical reason, Saurashtrians left Devagiri and migrated first to Marati Kingdom and then to Vijayanagar Empire. In that way many terms and words of Marati, Konkani and Kannada languages mingled with the Saurashtra language. Examples: Amti (curry), Limbu (Lemon), Angidi(Shop), etc.</p>
+    </div>
+</div>
+<!--HISTORY4-->
+<div style="height:auto;" class="HistoryC23 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Historycontent3 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    	<p id="h13" class="HistoryT13 hide6">Vijayanagar was situated near a village called Hampi in the Bellary District then. The first kings of the region were Harisharar and Bukka. Bukka sent delegates to Madurai to save Hindu Dharma and Hindu Kingdom from the destructions of Muslim rulers and established Pandyan King Rule there. When the heirs to the throne of Pandyan Kingdom were not available in 1500 Madurai came under the direct rule of Vijayanagar Empire, which was at its best under the King Krishnadevaraya between 1509 and 1531. First Madurai was ruled by the General of Krishnadevaraya. Viswanatha Naicker was the first Naicker King to rule Madurai between 1558 and 1563. His Prime Minister and General, Aryanatha Naicker built the Thousand Pillar Mandapam at Madurai.</p>
+    </div>
+    <div class="HistoryCC3 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<div id="him3" class="Historyimg3 hide7 col-lg-10 col-md-12 col-sm-12 col-xs-12"></div>
+    </div> 
+    <div class="Historycontent3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h23" class="HistoryT23 hide6">Viswanatha Naicker and his successors were defeated in the battle by Bahmani Sultan at Talikota in 1565. Vijayanagar Empire also was destroyed. At that time Saurashtrians who were living there with the full support of the kings for about 2 centuries had to leave Vijayanagar also. During that period many words and terms of Telugu language got mixed with the Saurashtra language such as Lohan (Iron), Boskanna (a festival), etc.</p>
+    </div>
+</div>
+<!--HISTORY5-->
+<div style="height:auto;" class="HistoryC24 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Historycontent4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h14" class="HistoryT14 hide5">Between 1623 and 1659 Thirumalai Naicker was ruling in Madurai. He invited the Saurashtrians weavers to Madurai to make silk dresses for the Royal family and as a result they came down to Madurai and settled there. As time went on they settled in other places like Trichy, Tanjore, Kumbakonam, Salem, etc. in Tamil Nadu. Because of their arrival at Madurai, the town developed into a big city.</p>
+    </div>
+    <div class="Historycontent4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<p id="h24" class="HistoryT24 hide6">For nearly 4 centuries now they have been living in Madurai and other towns in Tamil Nadu. Not only weaving works but also all sorts of works they are doing there. Today schools, colleges, Mills and other institutions are run by them. </p>
+    </div>
+</div>
+<!--CULTURE HEADING-->
+<div style="height:auto;" class="CultureC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="cultur" class="Culture hide">CULTURE</h1>
+</div>
+<!--CULTURE-->
+<div style="height:auto;" class="CultureCC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Culturecontent1 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    	<p id="c1" class="Culture1 hide6">The people of Saurashtra are adventurous, brave, adept in trade and commerce, and therefore they have established many commercial colonies in foreign countries, from ancient times. The Saurashtrians had settled in Africa, Mauritius, Ceylon (Sri lanka), Burma (Myanmar), Indonesia (Java), Sumatra, Indo China, Cambodia, Malaysia and Philippines and Fiji. The Saurashtrians are also spread over various parts of the Indian homeland, taking prominent part in the commercial field, which is more suitable to their nature. It is quite natural that the origin of many words of trade, commerce, business and measurements found in various Indian languages can be traced to Gujarati language.</p>
+    </div>
+    <div class="Culturecontent2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<p id="c2" class="Culture2 hide5">The reference of Saurashtra found in the Mahabharat, ‘Arthashastra’ of Chanakya, Deval Smriti and Buddha stories written during the 1st century A.D. Clear references to Saurashtra in the stone inscriptions at Girnar, of Maha Kshatrap Rudradama of 15O A.D, of the remains and reminiscences of the people living at Rojdi (Shrinathgadh) near Gondal in Saurashtra of 1850 B.C. and different strata of cultural life found at various places prove that the culture of Saurashtra is 4,000 years old.</p>
+    </div> 
+    <div class="Culturecontent3 col-lg-7 col-md-7 col-sm-7 col-xs-7">
+    	<p id="c3" class="Culture3 hide6">Most places in the peninsula retain a small town feel, local cadences of Gujarati called Kathiawadi, and a tradition of a daily siesta when everything shuts down. The region abounds in religious shrines, wildlife sanctuaries, palaces and relics of royal legacies. From the Asiatic Lions of Gir and the Jain temples of Palitana to the ancient ruins scattered in the Barda Hills and the laid-back Portuguese-influenced enclave of Diu, the region offers a wide spectrum of fascinating places to visit.</p>
+    </div>
+    <div class="Culturecontent4 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+    	<p id="c4" class="Culture4 hide5">As poet Navalram observed, people from Saurashtra are hardy, well built folks, daring, warlike and emotional. The community is said to be sturdy, prolific and active race, have audacity, love of adventure, a gay endurance , chivalry that often lead to buccaneering, exploration but too often due to greed there are some enterprising characteristics of people of Saursahtra. </p>
+    </div>
+</div>
+<!--LANGUAGE HEADING-->
+<div style="height:auto;" class="LanguageC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="languag" class="Language hide">LANGUAGE</h1>
+</div>
+<!--LANGUAGE-->
+<div style="height:auto;" class="LanguageCC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Languagecontent1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    	<p id="l1" class="Language1 hide6">Saurashtra carries alternate names and spellings like Saurashtram, Sourashtra, Sowrashtra, Pattunulkaarar, Palkar, Saurashtri etc. and also the name of an Indo-Aryan language of Kathiawar-Saurashtra. Though Saurashtra Language is not spoken in the Saurashtra region now, people of this region who migrated to Southern India many centuries ago especially in towns like Madurai, Paramakudi, Salem, Tanjore of Tamil Nadu and part of Andhra Pradesh still preserve and speak the language “Saurashtra”. The script of this language is derived from the Devanagari Script and shares similarities with modern day Gujarati. However, after the migration of this community in 11th century, Gujarati is influenced by Arabic, Urdu, Portuguese, English and Parsian and differs in many ways with respect to Surashtra language. On the other hand, the community who travelled from Saurashtra to South India through Surat, Marathwada, Ratnagiri, Karnataka, and Andhra Pradesh during several centuries took colour from languages & cultures of all the regions they crossed.</p>
+    </div>
+    <div class="LanguageImage col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    	<div id="lim" class="Languageimg hide5 col-lg-10 col-md-12 col-sm-12 col-xs-12"></div>
+    </div>
+</div>
+<!--SCRIPT HEADING-->
+<div style="height:auto;" class="ScriptC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="scrip" class="Script hide">SCRIPT</h1>
+</div>
+<!--SCRIPT-->
+<div style="height:auto;" class="ScriptCC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="ScriptImage1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    	<div style="border-right: 3px solid rgba(255,255,255,.85);" id="sim1" class="Scriptimg1 hide6 col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+    </div>
+    <div class="ScriptImage2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div id="sim2" class="Scriptimg2 hide5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
+        <div style="border-top: 3px solid rgba(255,255,255,.85);" id="sim3" class="Scriptimg3 hide5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
+    </div>
+</div>
+<!--PHONETIC EQUIVALENT HEADING-->
+<div style="height:auto;" class="PhoneticC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="phonet" class="Phonetic hide">PHONETIC EQUIVALENT</h1>
+</div>
+<!--PHONETIC EQUIVALENT-->
+<div style="height:auto;" class="PhoneticCC col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="pho1" class="Phoneticcontent1 hide col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<!--<p id="po1" class="Phonetic1 col-lg-12 col-md-12 col-sm-12 col-xs-12">The people of Saurashtra are adventurous, brave, adept in trade and commerce, and therefore they have established many commercial colonies in foreign countries, from ancient times. The Saurashtrians had settled in Africa, Mauritius, Ceylon (Sri lanka), Burma (Myanmar), Indonesia (Java), Sumatra, Indo China, Cambodia, Malaysia and Philippines and Fiji. The Saurashtrians are also spread over various parts of the Indian homeland, taking prominent part in the commercial field, which is more suitable to their nature. It is quite natural that the origin of many words of trade, commerce, business and measurements found in various Indian languages can be traced to Gujarati language.</p>-->
+    	<table class="table table-responsive table-striped">
+        	<tr>
+            	<th style="text-align:center;">ENGLISH WORD</th>
+            </tr>
+            <tr>
+            	<td>Come</td>
+            </tr>
+            <tr>
+            	<td>Go</td>
+            </tr>
+            <tr>
+            	<td>Eat</td>
+            </tr>
+            <tr>
+            	<td>Water</td>
+            </tr>
+            <tr>
+            	<td>What</td>
+            </tr>
+            <tr>
+            	<td>Name</td>
+            </tr>
+            <tr>
+            	<td>Tell</td>
+            </tr>
+            <tr>
+            	<td>Rasam</td>
+            </tr>
+            <tr>
+            	<td>Rasam</td>
+            </tr>
+            <tr>
+            	<td>Read/Study</td>
+            </tr>
+            <tr>
+            	<td>Mirror</td>
+            </tr>
+            <tr>
+            	<td>Account</td>
+            </tr>
+            <tr>
+            	<td>Flattened Rice</td>
+            </tr>
+            <tr>
+            	<td>Rangoli</td>
+            </tr>
+            <tr>
+            	<td>Cloth</td>
+            </tr>
+            <tr>
+            	<td>To Swallow</td>
+            </tr>
+            <tr>
+            	<td>Jump</td>
+            </tr>
+            <tr>
+            	<td>Scratch</td>
+            </tr>
+            <tr>
+            	<td>Vehicle</td>
+            </tr>
+            <tr>
+            	<td>Children</td>
+            </tr>
+        </table>
+    </div>
+    <div id="pho2" class="Phoneticcontent2 hide col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<!--<p id="po2" class="Phonetic2 col-lg-12 col-md-12 col-sm-12 col-xs-12">The reference of Saurashtra found in the Mahabharat, ‘Arthashastra’ of Chanakya, Deval Smriti and Buddha stories written during the 1st century A.D. Clear references to Saurashtra in the stone inscriptions at Girnar, of Maha Kshatrap Rudradama of 15O A.D, of the remains and reminiscences of the people living at Rojdi (Shrinathgadh) near Gondal in Saurashtra of 1850 B.C. and different strata of cultural life found at various places prove that the culture of Saurashtra is 4,000 years old.</p>-->
+    	<table class="table table-responsive table-striped">
+        	<tr>
+            	<th style="text-align:center;">SOURASHTRA WORD</th>
+            </tr>
+            <tr>
+            	<td>Avo</td>
+            </tr>
+            <tr>
+            	<td>Javo</td>
+            </tr>
+            <tr>
+            	<td>Khavo</td>
+            </tr>
+            <tr>
+            	<td>Pani</td>
+            </tr>
+            <tr>
+            	<td>Kaay</td>
+            </tr>
+            <tr>
+            	<td>Naav</td>
+            </tr>
+            <tr>
+            	<td>Sangi</td>
+            </tr>
+            <tr>
+            	<td>Daal Amti</td>
+            </tr>
+            <tr>
+            	<td>Pilchar</td>
+            </tr>
+            <tr>
+            	<td>Chowdhi</td>
+            </tr>
+            <tr>
+            	<td>Addham</td>
+            </tr>
+            <tr>
+            	<td>Lhekho</td>
+            </tr>
+            <tr>
+            	<td>Adkul</td>
+            </tr>
+            <tr>
+            	<td>Muggu</td>
+            </tr>
+            <tr>
+            	<td>Bottal</td>
+            </tr>
+            <tr>
+            	<td>Mingi</td>
+            </tr>
+            <tr>
+            	<td>Dhunki</td>
+            </tr>
+            <tr>
+            	<td>Ghitho</td>
+            </tr>
+            <tr>
+            	<td>Bondi</td>
+            </tr>
+            <tr>
+            	<td>Pillal</td>
+            </tr>
+        </table>
+    </div> 
+    <div id="pho3" class="Phoneticcontent3 hide col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    	<!--<p id="po3" class="Phonetic3 col-lg-12 col-md-12 col-sm-12 col-xs-12">Most places in the peninsula retain a small town feel, local cadences of Gujarati called Kathiawadi, and a tradition of a daily siesta when everything shuts down. The region abounds in religious shrines, wildlife sanctuaries, palaces and relics of royal legacies. From the Asiatic Lions of Gir and the Jain temples of Palitana to the ancient ruins scattered in the Barda Hills and the laid-back Portuguese-influenced enclave of Diu, the region offers a wide spectrum of fascinating places to visit.</p>-->
+    	<table class="table table-responsive table-striped">
+        	<tr>
+            	<th style="text-align:center;">NEAREST PHONETIC EQUIVALENT</th>
+            </tr>
+            <tr>
+            	<td>Aavo(Hindi)</td>
+            </tr>
+            <tr>
+            	<td>Jaao(Hindi)</td>
+            </tr>
+            <tr>
+            	<td>Khaao(Hindi)</td>
+            </tr>
+            <tr>
+            	<td>Paani(Hindi)</td>
+            </tr>
+            <tr>
+            	<td>Kaay(Marathi)</td>
+            </tr>
+            <tr>
+            	<td>Naav(Marathi)</td>
+            </tr>
+            <tr>
+            	<td>Sang(Marathi)</td>
+            </tr>
+            <tr>
+            	<td>Daal Aamti(Marathi)</td>
+            </tr>
+            <tr>
+            	<td>Charu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Chaduvu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Adhham(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Lekka(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Atukulu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Muggulu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Battalu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Mingadamu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Dumuku(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Gikudu(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Bandi(Telugu)</td>
+            </tr>
+            <tr>
+            	<td>Pillalu(Telugu)</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--FAMOUS HEADING-->
+<div id="famhead" class="FamousC hide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="fam" style="height:auto;top: -61px;position: relative;" class="Famous">NOTABLE SOURASHTRA PEOPLE</h1>
+</div>
+<!--FAMOUS-->
+<div id="famcon"  style="position:relative;z-index:999;height:auto;" class="FamousCon hide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div style="margin-top:7%;" id="portfolio">
+			<ul class="portfolio-grid">
+					<li>
+						<a href="#" class="animated flipInX">
+                            <img src="images/1-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+                            <img src="images/2-01.png" alt="img01"/>
+                        </a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/3-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/4-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/5-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/6-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/7-01.png" alt="img01"/>
+						</a>
+					</li>
+					<!--<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/8-01.png" alt="img01"/>
+						</a>
+					</li>-->
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/9-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/10-01.png" alt="img01"/>
+						</a>
+					</li>
+				</ul>
+    </div>
+</div>
+<!--MAGAZINE HEADING-->
+<div id="maghead" class="MagazineC hide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 id="mag" style="height:auto; top: -9px;position: relative;" class="Famous">SOURASHTRA MAGAZINES</h1>
+</div>
+<!--MAGAZINE-->
+<div id="magcon"  style="position:relative;z-index:1;" class="MagazineCon hide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div style="margin-top:7%;" id="portfolio1">
+			<ul class="portfolio-grid1">
+					<li>
+						<a href="#" class="animated flipInX">
+                            <img src="images/j1-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+                            <img src="images/j2-01.png" alt="img01"/>
+                        </a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/j3-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/j4-01.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="animated flipInX">
+							<img src="images/j5-01.png" alt="img01"/>
+						</a>
+					</li>
+				</ul>
+    </div>
+</div>
+<!--SOURASHTRA WORDS-->
+<div style="height:auto;"  id="pho4" class="Phoneticcontent4  hide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1 style="position:relative;z-index:999;margin-top: 31px;font-family:AR ESSENCE;font-size:24px; text-align:center; color:rgba(255,255,255,.85);">PDF ON: <a href="images/600 Eng-Sourashtra words (Revised 25.8.10).pdf" style="z-index:999;text-decoration:none; color:rgba(0,0,0,1);background-color:rgba(255,255,255,.85);border-radius:100%;box-shadow:0px 3px 4px rgba(0,0,0,.85)"  target="_blank"> &nbsp;&nbsp;&nbsp;600 ENGLISH-SOURASHTRA WORDS&nbsp;&nbsp;&nbsp;</a></h1>
+</div>
+</body>
+</html>

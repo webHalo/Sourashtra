@@ -1,0 +1,825 @@
+@import url("Ar_Essence/stylesheet.css");
+@import url("Rancho_Regular/stylesheet.css");
+@import url("Segoe_UI/stylesheet.css");
+@import url("PT_Sans_Narrow_Web_Regular/stylesheet.css");
+/* CSS Document */
+*{
+	margin:0;
+}
+body{
+	background-color:transparent;	
+}
+.SourashtraC{
+	height:10vh;
+}
+.Sourashtra{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+}
+.HolaC{
+	height:80vh;
+	top: 656px;
+	z-index:-999;
+	margin-top:-80vh;
+}
+.Hola{
+	position:relative;
+	margin:auto;	
+	height:722px;	
+	background-image:url(../images/sourashtra.png);
+	background-size:cover;
+	background-position:center;
+	transition:all .5s;
+}
+.ScrollC{
+	height:10vh;
+	position: relative;
+	top: 86vh;
+	margin-top:-10vh;
+}
+.Scroll{
+	color:rgba(255,255,255,.85);
+	font-size:23px; 
+	text-align:center;
+	transition:all .5s;
+}
+.ScrollT{
+	font-family: "Ar Essence";
+	color: rgba(255,255,255,.7);
+	font-size: 23px;
+	text-align: center;
+}
+.PrologueC{
+	height:10vh; 
+	top: 229px;
+	margin-top:-10vh;
+}
+.Prologue{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+}
+.PrologueC2{
+	height:83vh; 
+	top: 900px;
+	margin-top:-83vh;
+}
+.Para1{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 38vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+}
+.Para2{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:38vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+}
+.Prologueimage{
+	height:80vh;
+}
+.Prologueimg{
+	height:70vh; 
+	background-image:url(../images/prologue.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .7s; 
+	float:right; 
+	margin-right:10%;
+}
+.HistoryC{
+	height:10vh; 
+	transition:all .5s;
+	top: 339px;
+}
+.History1{
+	top: 35px;
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	transition: all .5s;
+	margin-top: -30px;
+}
+.History2{
+	font-family: "Ar Essence";
+	font-size: 50px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	transition: all .5s;
+	text-decoration: line-through;
+	top: 20px;
+	margin-top: -55px;
+}
+.HistoryC2{
+	height:83vh;
+}
+.HistoryCC{
+	height:40vh;
+}
+.Historyimg{
+	height:41vh; 
+	background-image:url(../images/sun.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:645px;
+	margin-top:-41vh;
+}
+.HistoryT1{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:41vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top:645px;
+	margin-top:-41vh;
+}
+.HistoryT2{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:25vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top:545px;
+	margin-top:-25vh;
+}
+.HistoryC21{
+	height:83vh;
+}
+.HistoryT11{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:41vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top: 440px;
+	margin-top:-41vh;
+}
+.HistoryCC1{
+	height:40vh;
+}
+.Historyimg1{
+	height:41vh; 
+	background-image:url(../images/diamond.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top: 440px;
+	margin-top:-41vh;
+}
+.HistoryT21{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:25vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top: 343px;
+	margin-top:-25vh;
+}
+.HistoryC22{
+	height:83vh;
+}
+.HistoryCC2{
+	height:40vh;
+}
+.Historyimg2{
+	height:41vh; 
+	background-image:url(../images/lang.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top: 238px;
+	margin-top:-41vh;
+}
+.HistoryT12{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:41vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top:238px;
+	margin-top:-41vh;
+}
+.HistoryT22{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 25vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: 140px;
+	margin-top: -25vh;
+}
+.HistoryC23{
+	height:83vh;
+}
+.HistoryT13{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 41vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: 35px;
+	margin-top: -41vh;
+}
+.HistoryCC3{
+	height:40vh;
+}
+.Historyimg3{
+	height:41vh; 
+	background-image:url(../images/sword.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:35px;
+	margin-top:-41vh;
+}
+.HistoryT23{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 25vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -255px;
+	margin-bottom: -25vh;
+}
+.HistoryC24{
+	height:83vh;
+}
+.HistoryCC4{
+	height:40vh;
+}
+
+.HistoryT14{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 23vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -478px;
+	margin-bottom: -23vh;
+}
+.HistoryT24{
+	background-color:rgba(255,255,255,.75); 
+	font-family:"Segoe UI"; 
+	font-size:20px; 
+	color:rgba(0,0,0,.85);  
+	height:20vh; 
+	overflow:auto; 
+	padding:40px; 
+	text-align:justify;
+	position:relative;
+	transition:all .5s;
+	top: -285px;
+	margin-bottom:-20vh;
+}
+.CultureC{
+	height:10vh; 
+	top:-511px;
+	margin-bottom:-10vh;
+}
+.Culture{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	/*top: -150px;*/
+	transition: all .5s;
+}
+.Culture1{
+	background-color: rgba(255,255,255,.75);
+	font-family:"Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 37vh;
+	overflow: auto;
+	padding: 35px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -446px;
+	margin-bottom:-37vh;
+}
+.Culture2{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 51vh;
+	overflow: auto;
+	padding: 35px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -446px;
+	margin-bottom:-51vh;
+}
+.Culture3{
+	background-color: rgba(255,255,255,.75);
+	font-family:"Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 34vh;
+	overflow: auto;
+	padding: 35px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -155px;
+	margin-bottom:-34vh;
+}
+.Culture4{
+	background-color: rgba(255,255,255,.75);
+	font-family: "Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 33vh;
+	overflow: auto;
+	padding: 35px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -48px;
+	margin-bottom:-33vh;
+}
+.LanguageC{
+	height:10vh; 
+	top:-414px;
+	margin-bottom:-10vh;
+}
+.Language{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	/*margin-top: -1385px;*/
+	transition: all .5s;
+}
+.Language1{
+	background-color: rgba(255,255,255,.75);
+	font-family:"Segoe UI";
+	font-size: 20px;
+	color: rgba(0,0,0,.85);
+	height: 63vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: justify;
+	position: relative;
+	transition: all .5s;
+	top: -275px;
+	margin-bottom:-63vh;
+}
+.Languageimg{
+	height:75vh; 
+	background-image:url(../images/language.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:-318px;
+	margin-bottom:-75vh;
+}
+.ScriptC{
+	height:10vh; 
+	transition:all .5s;
+	top:-315px;
+	margin-bottom:-10vh;
+}
+.Script{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	/*margin-top: -1799px;*/
+	transition: all .5s;
+}
+.ScriptCC{
+	height:40vh;
+}
+.Scriptimg1{
+	height:80vh; 
+	background-image:url(../images/script1-01.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:-237px;
+	margin-bottom:-80vh;
+}
+.Scriptimg2{
+	height:44vh; 
+	background-image:url(../images/script2-01.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:-237px;
+	margin-bottom:-40vh;
+}
+.Scriptimg3{
+	height:36vh; 
+	background-image:url(../images/script3-01.png); 
+	background-size:cover; 
+	background-position:center;
+	position:relative;
+	transition:all .5s;
+	top:67px;
+	margin-top:-40vh;
+}
+.PhoneticC{
+	height:10vh; 
+	transition:all .5s;
+	top: -521px;
+	margin-bottom:-10vh;
+}
+.Phonetic{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	transition: all .5s;
+}
+.PhoneticCC{
+	display: flex;
+	transition:all .5s;
+}
+.Phoneticcontent1{
+	background-color: rgba(255,255,255,.5);
+	font-family: "Segoe UI";
+	font-size: 16px;
+	color: rgba(0,0,0,.85);
+	height: 116vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+	transition: all .5s;
+	top: -440px;
+	padding-left: 2%;
+	margin-bottom:-120vh;
+}
+.Phoneticcontent2{
+	background-color: rgba(255,255,255,.5);
+	font-family:"Segoe UI";
+	font-size: 16px;
+	color: rgba(0,0,0,.85);
+	height: 116vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+	transition: all .5s;
+	top: -440px;
+	padding-left: 2%;
+	margin-bottom:-120vh;
+}
+.Phoneticcontent3{
+	background-color: rgba(255,255,255,.5);
+	font-family: "Segoe UI";
+	font-size: 16px;
+	color: rgba(0,0,0,.85);
+	height: 116vh;
+	overflow: auto;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+	transition: all .5s;
+	top: -440px;
+	padding-left: 2%;
+	margin-bottom:-120vh;
+}
+.Phoneticcontent4{
+	position: relative;
+	top: -298px;
+	height: 9vh;
+	margin-bottom: -10vh;
+
+}
+.FamousC{
+	height:10vh; 
+	transition:all .5s;
+	top: -207px;
+	margin-bottom:-10vh;
+}
+.Famous{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	transition: all .5s;
+}
+.FamousCon{
+	height: 82vh;;
+	top: 13px;
+	/*background-color:rgba(255,255,255,.85);*/
+	margin-bottom: -82vh;
+}
+
+.portfolio-grid {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.portfolio-grid li {
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	vertical-align: top;
+    width: 300px;
+}
+
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+    width: 100%;
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+	box-shadow:1px 1px 2px rgba(0,0,0.85);
+	background-color:rgba(0,0,0,.3);
+}
+
+.portfolio-grid li > a img:hover {
+	border-radius: 50%;
+    z-index: 999;
+	/*box-shadow:2px 2px 4px rgba(0,0,0.85);*/
+	background-color:rgba(255,255,255,.85);
+}
+
+
+.MagazineC{
+	height:10vh; 
+	transition:all .5s;
+	top: -207px;
+	margin-bottom:-10vh;
+}
+.Magazine{
+	font-family: "Ar Essence";
+	font-size: 56px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	transition: all .5s;
+}
+.MagazineCon{
+	height: 80vh;
+	margin-top: 124px;
+}
+
+
+.portfolio-grid1 {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.portfolio-grid1 li {
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	vertical-align: top;
+    width: 300px;
+}
+
+.portfolio-grid1 li > a,
+.portfolio-grid1 li > a img {
+    width: 100%;
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+	box-shadow:1px 1px 2px rgba(0,0,0.85);
+	background-color:rgba(255,255,255,.5);
+}
+
+
+.animated{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;}
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -moz-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -moz-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-o-keyframes flipInX {
+    0% {
+        -o-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -o-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -o-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.flipInX {
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flipInX;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flipInX;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flipInX;
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}
+.hide{
+	opacity:0;
+}
+.show{
+	opacity:1;
+}
+.hide1{
+	left:+172%;
+	
+}
+.show1{
+	left:0;
+	
+}
+.hide2{
+	left:-217%;
+	
+}
+.show2{
+	left:0;
+	
+}
+.hide3{
+	margin-top:58px;
+}
+.hide31{
+	margin-top: 173px;
+}
+.hide32{
+	margin-top: 287px;
+}
+.hide33{
+	margin-top:401px;
+}
+.hide4{
+	left:-93%;
+	
+}
+.show4{
+	left:0;
+	
+}
+.hide5{
+	left:+100%;
+	
+}
+.show5{
+	left:0;
+	
+}
+.hide6{
+	left:-100%;
+	
+}
+.show6{
+	left:0;
+	
+}
+.hide7{
+	left:+89%;
+	
+}
+.show7{
+	left:0;
+	
+}
